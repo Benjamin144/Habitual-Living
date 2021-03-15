@@ -73,6 +73,10 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-black {
+    background: #161c24 !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

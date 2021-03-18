@@ -1,0 +1,338 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "ACQ-SPA-1-5",
+      "name": "Acquifero Wash Basin Taps",
+      "description": "Acquifero is a collection with a particularly essential design and are made in AISI 316L stainless.",
+      "price": 58.99,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "https://cdn.bigbathroomshop.co.uk/media/catalog/product/cache/07469e52453ec3e9e92a88c7a63b12d8/b/t/bt0117c_hr_a_gimp_zoomed.jpg",
+      "image": "acquifero_basin.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "LAV-OUT-2-9",
+      "name": "Lavastone Chargrill 9.5kW",
+      "description": "This premium counter top commercial lava rock chargrill is fitted with heavy duty straight burners.",
+      "price": 598.99,
+      "category": 9,
+      "rating": 5,
+      "image_url": "https://adexa.co.uk/image/cache/catalog/Adexa/6LG020-1200x1200.jpg",
+      "image": "lavastone_chargrill.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "ADE-GOU-3-1",
+      "name": "Adexa Insect Killer GC240",
+      "description": "This commercial fly killer is perfect for keeping areas free from unwanted pests such as flies.",
+      "price": 58.8,
+      "category": 1,
+      "rating": 4.8,
+      "image_url": "https://adexa.co.uk/image/cache/catalog/Adexa/GC240-1200x1200.jpg",
+      "image": "adexa_insect_killer.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "AMA-DEA-4-4",
+      "name": "Amazon Echo",
+      "description": "The 3th gen Amazon Echo premium sound and added features.",
+      "price": 58.99,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/71Q9d6N7xkL._AC_SL1000_.jpg",
+      "image": "amazon_echo.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "AMA-LIV-5-6",
+      "name": "Amazon Echo II",
+      "description": "The 4th gen Amazon Echo brings an updated look, premium sound and added features.",
+      "price": 89.99,
+      "category": 6,
+      "rating": 5,
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/71Q9d6N7xkL._AC_SL1000_.jpg",
+      "image": "amazon_echo_II,jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "ARL-OUT-6-9",
+      "name": "Arlo 3 Floodlight",
+      "description": "Works with Alexa for voice control (Alexa device sold separately). Wireless Requirements-2.4GHertz Wi-Fi network.",
+      "price": 58.99,
+      "category": 9,
+      "rating": 5,
+      "image_url": "https://brain-images-ssl.cdn.dixons.com/0/0/10214100/u_10214100.jpg",
+      "image": "arlo_3_floodlight.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "AUG-SEC-7-7",
+      "name": "August Smart Lock",
+      "description": "Works with Alexa for voice control (Alexa device sold separately). Wireless Requirements-2.4GHertz Wi-Fi network (Connect Wi-Fi Bridge sold separately). Control and monitor your door from anywhere. Lock and unlock your door, control keyless access and keep track of who comes and goes, all from your phone.",
+      "price": 192.46,
+      "category": 7,
+      "rating": 4.6,
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/51Lm7sw46GL._AC_SL1000_.jpg",
+      "image": "august_smart_lock.png"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "BED-DEA-8-4",
+      "name": "Bedroom Pentagramma",
+      "description": "Modular bed head in solid canaletta walnut. The bed head can be made up of one individual lateral unit of cm.105 for a single bed, or of two lateral units with a total width of cm.210.",
+      "price": 58.99,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/img_pro2-4/114/9263/pentagramma-b.jpg",
+      "image": "bedroom_pentagrama.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "BEL-OFF-9-3",
+      "name": "Belkin_wmo_Plug_1",
+      "description": "The Wemo Switch gives you control of your lamps and small appliances whenever you want, wherever you choose, with tonnes of options for scheduling and automation. Paired with Amazon Alexa or Google Assistant.",
+      "price": 58.99,
+      "category": 3,
+      "rating": 4.6,
+      "image_url": "https://www.digitalsave.co.uk/images/detailed/6/belkin_wmo_plug_1.png",
+      "image": "belkin_wmo_plug_1.png"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "BOL-LIG-10-2",
+      "name": "Bolster-Track",
+      "description": "Choose the fully chromed versions with mirror effect or tone things down with the matte black or white versions, which also have a chromed edge. Available as a foot, recessed, track and pendant variant.",
+      "price": 58.99,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/img_pro2-4/102/0867/bolster-foot-ar111-11050309-surface-b.jpg",
+      "image": "bolster_track.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "EUF-OUT-11-9",
+      "name": "Eufy Doorbell",
+      "description": "Wireless Video Doorbell (Battery-Powered) with 2K HD, No Monthly Fee, On-Device AI for Human Detection, 2-Way Audio, Simple Self-Installation",
+      "price": 179.99,
+      "category": 9,
+      "rating": 5,
+      "image_url": "https://cdn.shopify.com/s/files/1/0504/1094/6753/products/E8210_Battery_Video_Doorbell_2K_EF_BC_88_E9_BB_91_EF_BC_89_2048x.jpg?v=1608126414",
+      "image": "eufy_doorbell.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "EUF-SEC-12-7",
+      "name": "Eufy Video Camera",
+      "description": "t includes the Thermostat E and the Heat Link E. The Heat Link goes in the same place as your current thermostat, while the Thermostat E can be placed somewhere handy in your home.",
+      "price": 37.99,
+      "category": 7,
+      "rating": 5,
+      "image_url": "https://cdn.shopify.com/s/files/1/0504/1094/6753/products/T8400--800x800_2048x.jpg?v=1608126492",
+      "image": "eufy_indoor_cam.jpg"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "GOO-LIV-13-6",
+      "name": "Google Nest  Hub",
+      "description": "t includes the Thermostat E and the Heat Link E. The Heat Link goes in the same place as your current thermostat, while the Thermostat E can be placed somewhere handy in your home.",
+      "price": 198.99,
+      "category": 6,
+      "rating": 4.8,
+      "image_url": "https://storage.googleapis.com/mannequin/blobs/ad8f6ace-de2c-4627-b38e-e34f6e3469d0.mp4",
+      "image": "google_nest_hub.jpg"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "GOO-LIV-14-6",
+      "name": "Google Nest Thermo",
+      "description": "Supplied in this pack of two and with its classic eye catching design the Google Nest Learning Thermostat is not only beautiful to look at but learns the temperature that you like, then programs itself.",
+      "price": 58.99,
+      "category": 6,
+      "rating": 5,
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS67blxViRUikoDzbicmo8ZM6XT4fjin0TX_4AsYsQ2KQNc0YF2IQ&usqp=CAc",
+      "image": "google_nest_thermo.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "INF-DIS-15-8",
+      "name": "Infinty_Gold",
+      "description": "Ninja Titanium Gold Mirror \"ALLOY's innovative Titanium-plated Gold Mirror Finish has been designed to capture the striking gold colour of brass in a mirror",
+      "price": 199.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/img_pro2-4/109/9397/infinity_Amber_bru_1_01_br.jpg",
+      "image": "infinty_gold.jpg"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "BIK-OUT-16-9",
+      "name": "Bikers Loclock",
+      "description": "Bicycle rack in recycled polyethylene with UHPC inside reinforcement. Dimensions: 83 x 12 x 85 cm Weight: 20 kg Installation: Base embedding in the pavement",
+      "price": 189.99,
+      "category": 9,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/pro2-3/20157142/loclock-01-pro-b-arcit18.jpg",
+      "image": "loclock_01.jpg"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "MIL-SPA-18-5",
+      "name": "Milk-Pro-Basin",
+      "description": "0 tap hole suspended washbasin with overflow hole cm. 40x28xh.15,5 (1 tap hole left or right only on request)",
+      "price": 499.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/pro2-3/20157923/milk-f-001526-pro-b-arcit18.jpg",
+      "image": ""
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "MEC-DIS-17-8",
+      "name": "Mech Timer",
+      "description": "Salter Mechanical Timer - Stainless Steel. Stainless steel mechanical timer. 60 minute count down time. Soft touch rubber turn knob. Easy to read dial. Extra long alarm. 1 year guarantee. Stainless steel/Black",
+      "price": 12.99,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "https://cdn.shopify.com/s/files/1/0248/3915/9844/products/41kj_7E08vL_1024x1024.jpg?v=1612438391",
+      "image": "mech_timer,png"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "PAG-OUT-19-9",
+      "name": "Pagoden-Schirm-kurbel-Multi",
+      "description": "240 cm Powder-coated aluminum frame; fiberglass rods; covering ACRYLFABRIC Accessories: Crank with Tilt mechanism",
+      "price": 179.99,
+      "category": 9,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/img_pro2-4/146/4108/pagoden-schirm-kurbel-multi2-b.jpg",
+      "image": "pagoden_umbrella.jpg"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "PHI-LIG-20-2",
+      "name": "Phillips Hue",
+      "description": "Control your lighting from your smartphone Includes bridge / bulbs x 2 Works with Apple HomeKit / Google Assistant / Amazon Alexa Choose from 16 million colours Sync lights with movies and music",
+      "price": 98.49,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "https://brain-images-ssl.cdn.dixons.com/8/3/10186638/u_10186638.jpg",
+      "image": "phillips_hue.jpg"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "SAL-DIS-21-8",
+      "name": "Salter-Contour-Digital-Timer",
+      "description": "Take the guesswork out of cooking and baking with this handy kitchen digital timer from Salter. You can set it to count up or count down, with a 99 minutes, 59 seconds maximum time.",
+      "price": 13.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "https://www.robertdyas.co.uk/media/catalog/product/cache/ee7f57371963fdaf9f4353c1acf7bd18/u/n/untitled-1_0005_103790.jpg",
+      "image": "salter_digital_timer.png"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "STO-SPA-22-5",
+      "name": "Porro storage-dressing",
+      "description": "Offering three different types of wardrobe structures, Storage is the first sectional system that creates continuity of space in the whole wardrobe. The innovation arises from the new concept of the bearing structure: the side.",
+      "price": 250.00,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/img_pro2-1/140/1008/storage-dressing-001-y-b.jpg",
+      "image": "storage_dressing.jpg"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "SUP-SPA-23-9",
+      "name": "superlock-01-pro-b-arcit18",
+      "description": "Bicycle rack in recycled polyethylene with UHPC concrete inside reinforcement. Dimensions: 83 x 12 x 85 cm Weight: 20 kg Installation: Base embedding in the pavement.",
+      "price": 229.99,
+      "category": 9,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/pro2-3/20157151/superlock-01-pro-b-arcit18.jpg",
+      "image": "superlock_01.jpg"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "ZIG-LIG-24-2",
+      "name": "zig-zag-piantana-neu-b",
+      "description": "Satin Nickel Metal Wall Sconces and floor lamps.",
+      "price": 299.99,
+      "category": 2,
+      "rating": 5,
+      "image_url": "https://image.architonic.com/img_pro2-4/107/6261/zig-zag-piantana-neu-b.jpg",
+      "image": "zig_zag_piantana.jpg"
+    }
+  }
+]

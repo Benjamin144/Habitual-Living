@@ -179,9 +179,12 @@ body {
 
 }
 
+<<<<<<< HEAD
 .card-img-top {
     max-width: 75%;
 }
+=======
+>>>>>>> 117bca8c17c3680e9f51d16c4217de1c277143bc
 
 .card {
     transition: transform 0.2s ease;

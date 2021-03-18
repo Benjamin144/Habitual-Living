@@ -179,9 +179,6 @@ body {
 
 }
 
-.card-img-top {
-    max-width: 50%;
-}
 
 .card {
     transition: transform 0.2s ease;

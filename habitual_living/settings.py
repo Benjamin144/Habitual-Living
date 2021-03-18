@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',  # logs social media (model 3)
     'allauth.socialaccount.providers.amazon',
     'allauth.socialaccount.providers.shopify',
+    'home',
 ]
 
 MIDDLEWARE = [

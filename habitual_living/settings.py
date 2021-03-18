@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.amazon',
     'allauth.socialaccount.providers.shopify',
     'home',
-    'products'
+    'products',
 ]
 
 MIDDLEWARE = [

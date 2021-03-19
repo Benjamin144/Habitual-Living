@@ -149,7 +149,7 @@ body {
 }
 
 .bg-black {
-    background: #161c24 !important;
+    background: #3f4952 !important;
         box-sizing: border-box;
 }
 
@@ -159,7 +159,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: #dee6f0;
+    background: #f8f8f8;
     z-index: -1;
 }
 

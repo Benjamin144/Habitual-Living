@@ -67,20 +67,6 @@ html {
     border: none;
 }
 
-#get-social {
-    position: fixed;
-    left: 10px;
-    bottom: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #8BC802;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    color: greenyellow;
-    outline: none;
-    cursor: progress; 
-    border: none;
-}
 
 #btnScrollToTop:active {
     background: #FAAC42;
@@ -179,12 +165,9 @@ body {
 
 }
 
-<<<<<<< HEAD
 .card-img-top {
-    max-width: 75%;
+    max-width: 95%;
 }
-=======
->>>>>>> 117bca8c17c3680e9f51d16c4217de1c277143bc
 
 .card {
     transition: transform 0.2s ease;
@@ -196,3 +179,28 @@ body {
 .card:hover {
     transform: scale(1.1);
   }
+
+  
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 200px;
+    }
+}

@@ -1,8 +1,10 @@
-<<<<<<< HEAD
 from django.shortcuts import render
 from .models import Product
 
+# Create your views here.
+
 def all_products(request):
+    """ A view to show all products, including sorting and search queries """
 
     products = Product.objects.all()
 
@@ -11,5 +13,3 @@ def all_products(request):
     }
 
     return render(request, 'products/products.html', context)
-=======
->>>>>>> 117bca8c17c3680e9f51d16c4217de1c277143bc

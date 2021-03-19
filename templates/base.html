@@ -43,458 +43,102 @@
     {% endblock %}
 
     <title>Habitual Living {% block extra_title %}{% endblock %}</title>
-</head>
-
-<body>
-<header class="container-fluid sticky-top">
-    <!-- subject to change to suit new design branding -->
-    <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-            <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                <h2 class="logo-font text-black my-0"><strong>Habitual</strong> Living</h2>
-            </a>
-        </div>
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <form method="GET" action="">
-                <div class="input-group w-100">
-                    <input class="form-control border border-gray-light rounded-0" type="text" name="q"
-                        placeholder="Search Habitual or type a product...">
-                    <div class="input-group-append">
-                        <button class="form-control btn btn-black border border-gray-light rounded-0" type="submit">
-                            <span class="icon">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                <li class="list-inline-item dropdown">
-                    <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        <div class="text-center">
-                            <div><i class="fas fa-user fa-lg"></i></div>
-                            <p class="my-0">My Account</p>
+  </head>
+  <body>
+    <header class="container-fluid fixed-top">
+        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <h2 class="logo-font text-black my-0"><strong>Habitual</strong> Living</h2>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <form method="GET" action="">
+                    <div class="input-group w-100">
+                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
                         </div>
-                    </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                        {% if request.user.is_authenticated %}
-                        {% if request.user.is_superuser %}
-                        <a href="" class="dropdown-item">Product Essentials</a>
-                        {% endif %}
-                        <a href="" class="dropdown-item">My Profile</a>
-                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                        {% else %}
-                        <a href="{% url 'account_signup' %}" class="dropdown-item">Subscribe</a>
-                        <a href="{% url 'account_login' %}" class="dropdown-item">Sign in</a>
-                        {% endif %}
                     </div>
-                </li>
-                <li class="list-inline-item">
-                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-green{% endif %} nav-link"
-                        href="">
-                        <div class="text-center">
-                            <div><i class="fas fa-cart-arrow-down fa-lg"></i></div>
-                            <p class="my-0">
-                                {% if grand_total %}
-                                ${{ grand_total|floatformat:2 }}
-                                {% else %}
-                                £0.00
+                </form>
+            </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <li class="list-inline-item dropdown">
+                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center">
+                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <p class="my-0">My Account</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                    <a href="" class="dropdown-item">Product Management</a>
                                 {% endif %}
-                            </p>
+                                <a href="" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            {% endif %}
                         </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="row bg-white">
-        <nav class="navbar navbar-expand-lg navbar-light w-100">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            {% include 'includes/mobile-top-header.html' %}
-            {% include 'includes/main-nav.html' %}
-        </nav>
-    </div>
-    <div id="delivery-banner" class="row text-center">
-        <div class="col bg-black text-white">
-            <div class="delivery-wrapper">
-                <div class="delivery-content">
-
-                    <h4 class="logo-font my-1">Spend more and Save £££{{ free_shipping_threshold }} We deliver! <i
-                            class="fas fa-truck"></i></h4>
-                    <div class="spend-save">
-                        <p class="discount"><strong>£10 off £100</strong><br>
-                            Enter code <strong>HABIT1</strong></p>
-
-                        <p class="discount"><strong>£20 off £150</strong><br>
-                            Enter code <strong>HABIT2</strong></p>
-
-                        <p class="discount"><strong>£30 off £200</strong><br>
-                            Enter code <strong>HABIT3</strong></p>
-                        <small class="small-print">Applies to full price products only (excludes outdoor purchases).
-                            Cannot
-                            be used in conjunction with any other offer. Min spend applies. Limited time only. </small>
-
-                    </div>
-                </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                        ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                        $0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</header>
+        <div class="row bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+            </nav>
+        </div>
+        <div id="delivery-banner" class="row text-center">
+            <div class="col bg-black text-white">
+                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_shipping_threshold }}!</h4>                
+            </div>            
+        </div>
+    </header>
+
+
+
+
+
+
+
 
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
 
     {% block page_header %}
-    <!-- additional content on top of main content -->
-    {% endblock %}
-    {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/acquifero_basin.jpg" class="card img-top" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/adexa_insect_killer.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/amazon_echo_II.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/arlo_3_floodlight.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/august_smart_lock.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/belkin_wmo_plug_1.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/bolster_track.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/eufy_doorbell.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/eufy_indoor_cam.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/google_nest_hub.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/google_nest_thermo.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/infinty_gold.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/lavastone_chargrill.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/loclock_01.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/mech_timer.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/milk_mini.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/pagoden_umbrella.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/pentagramma-b.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/phillips_hue.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/amazon_echo.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-         <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/salter_digital_timer.png" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/storage_dressing.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/superlock_01.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card">
-                    <img src="media/zig_zag_piantana.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-block">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated ....3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-    </div>
-    </div>
     {% endblock %}
 
-    {% block postloadjs %}
+    {% block content %}
+    {% endblock %}
+
+       {% block postloadjs %}
     <!-- javascript to load at the end of the body -->
     <button id="btnScrollToTop">
         <!-- my JS code for scrolling back to top of page-->
@@ -511,5 +155,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     {% endblock %}
 
-</body>
+    
+  </body>
 </html>

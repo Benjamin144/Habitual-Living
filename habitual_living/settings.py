@@ -41,8 +41,6 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',  # basic user account functions
     'allauth.socialaccount',  # logs social media (model 3)
-    'allauth.socialaccount.providers.amazon',
-    'allauth.socialaccount.providers.shopify',
     'home',
     'products',
 ]

@@ -17,10 +17,10 @@
                 Luxury
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="Luxury-link">
-                <a href="" class="dropdown-item">Gourmet &amp; Spa</a>
-                <a href="" class="dropdown-item">Living Room</a>
-                <a href="" class="dropdown-item">Outdoor</a>
-                <a href="" class="dropdown-item">All Luxury</a>
+                <a href="{% url 'products' %}?category=gourmet,spa" class="dropdown-item">Gourmet &amp; Spa</a>
+                <a href="{% url 'products' %}?category=living_space" class="dropdown-item">Living Space</a>
+                <a href="{% url 'products' %}?category=outdoor" class="dropdown-item">Outdoor</a>
+                <a href="{% url 'products' %}?category=gourmet,spa,living_space,outdoor" class="dropdown-item">All Luxury</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Essentials
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="essentials-link">
-                <a href="" class="dropdown-item">Lighting &amp; Sound</a>
-                <a href="" class="dropdown-item">Security &amp; Data</a>
-                <a href="" class="dropdown-item">All Essentials</a>
+                <a href="{% url 'products' %}?category=lighting_sound" class="dropdown-item">Lighting &amp; Sound</a>
+                <a href="{% url 'products' %}?category=security_data" class="dropdown-item">Security &amp; Data</a>
+                <a href="{% url 'products' %}?category=lighting_sound,security_data" class="dropdown-item">All Essentials</a>
             </div>
         </li>
 
@@ -40,10 +40,10 @@
                 Exclusives
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="exclusives-link">
-                <a href="" class="dropdown-item">Discovery</a>
-                <a href="" class="dropdown-item">Offers</a>
-                <a href="" class="dropdown-item">Discounts</a>
-                <a href="" class="dropdown-item">All Exclusives</a>
+                <a href="{% url 'products' %}?category=discovery" class="dropdown-item">Discovery</a>
+                <a href="{% url 'products' %}?category=offers" class="dropdown-item">Offers</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=discovery,offers,deals" class="dropdown-item">All Exclusives</a>
             </div>
         </li>
     </ul>

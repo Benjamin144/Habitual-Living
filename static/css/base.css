@@ -2,6 +2,11 @@ html {
     height: 100%;
     scroll-behavior: smooth;
 }
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
     
 .scroll-down{
     height: 50px;
@@ -73,7 +78,7 @@ html {
 }
 
 body {
-    /*background: url('/media/jill-heyer-03ztkGdYWU8-unsplash.jpg') no-repeat center center fixed;*/
+    background: url('/media/samantha-gades-BlIhVfXbi9s-unsplash.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #283342;
@@ -148,6 +153,16 @@ body {
         box-sizing: border-box;
 }
 
+.overlay {
+    height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #73767a;
+    z-index: -1;
+}
+
 .delivery-wrapper {
     font-size: 62.5%;
     width: 100%;
@@ -179,6 +194,9 @@ body {
 .card:hover {
     transform: scale(1.1);
   }
+
+
+
 
   
 /* -------------------------------- Media Queries */

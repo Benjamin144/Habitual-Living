@@ -159,7 +159,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: #73767a;
+    background: #dee6f0;
     z-index: -1;
 }
 
@@ -195,10 +195,6 @@ body {
     transform: scale(1.1);
   }
 
-
-
-
-  
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -220,5 +216,16 @@ body {
 
     .header-container {
         padding-top: 200px;
+    }
+}
+
+/*padding to the top as images cut off even wih collapsed navbar in certain mobile views */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }

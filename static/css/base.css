@@ -136,16 +136,6 @@ body {
     color: white;
 }
 
-.product-essentials-button:hover,
-.product-essentials-button:active,
-.product-essentials-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #73767a;
-    color: white;
-}
-
 .text-black {
     color: #000 !important;
 }

@@ -120,6 +120,12 @@ body {
     color: white;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+}
+
 .household-luxury-button:hover,
 .household-luxury-button:active,
 .household-luxury-button:focus,

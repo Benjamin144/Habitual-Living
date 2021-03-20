@@ -163,6 +163,11 @@ body {
     z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: #7397a7 !important;
+    color: #fff !important;
+}
+
 .delivery-wrapper {
     font-size: 62.5%;
     width: 100%;

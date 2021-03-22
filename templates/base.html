@@ -121,10 +121,25 @@
             </nav>
         </div>
         <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">Spend more and Save £££{{ free_delivery_threshold }} We'll deliver!</h4>
+        <div class="col bg-black text-white">
+            <div class="delivery-wrapper">
+                <div class="delivery-content">
+
+                    <h4 class="logo-font my-1">Spend more and Save £££{{ free_shipping_threshold }} We deliver! <i
+                            class="fas fa-truck"></i></h4>
+                    <div class="spend-save">
+                        <p class="discount"><strong>£10 off £100</strong><br>
+                            Enter code <strong>HABIT1</strong></p>
+
+                        <small class="small-print">Applies to full price products only (excludes outdoor purchases).
+                            Cannot
+                            be used in conjunction with any other offer. Min spend applies. Limited time only. </small>
+
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </header>
 
     {% if messages %}

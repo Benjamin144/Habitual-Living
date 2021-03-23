@@ -1,9 +1,11 @@
 from django.shortcuts import render
 
 from .models import Post
-posts = Post.objects.all()
+
 
 def frontend(request):
+    posts = Post.objects.all()
+
     return render(request, 'blog/frontend.html', {'posts': posts})
 
 def post_detail(request, slug):

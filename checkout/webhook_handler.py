@@ -1,3 +1,6 @@
+# The following logic for form data caching was taken from the course matierial and my technical response and understanding of this logic is ongoing 
+# https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/90cda137ebaa461894ba8c89cd83291a/ #
+
 from django.http import HttpResponse
 
 
@@ -19,6 +22,8 @@ class StripeWH_Handler:
         """
         Handle the payment_intent.succeeded webhook from Stripe
         """
+        intent = event.data.object
+        print(intent)
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)

@@ -85,11 +85,11 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                            {# <a href="{% url 'blog' %}" class="dropdown-item"><strong>Feedback</strong></a> #}
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
+                            <a href="{% url 'frontend' %}" class="dropdown-item"><strong>Feedback</strong></a>
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Subscribe</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item">Signin</a>
                             {% endif %}

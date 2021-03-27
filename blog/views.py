@@ -6,7 +6,7 @@ from .models import Post
 def frontend(request):
     posts = Post.objects.all()
 
-    return render(request, 'blog/frontend.html', {'posts': posts})
+    return render(request, 'blog/base.html', {'posts': posts})
 
 def post_detail(request, slug):
     post = Post.objects.get(slug=slug)

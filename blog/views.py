@@ -4,12 +4,15 @@ from .forms import CommentForm
 from .models import Post
 
 
+def frontend(request):
+    posts = Post.objects.all()
+    return render(request, 'blog/frontend.html', {'posts': posts})
+
+
 def base(request):
     posts = Post.objects.all()
 
     return render(request, 'blog/base.html', {'posts': posts})
 
 
-def frontend(request):
 
-    return render(request, 'blog/frontend.html')

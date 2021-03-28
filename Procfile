@@ -1,0 +1,1 @@
+web: gunicorn habitual_living.wsgi:application

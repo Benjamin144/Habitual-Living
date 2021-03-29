@@ -1,4 +1,4 @@
-# https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/2c1b98a8efb748009445d5056c97483b/?child=first #
+# https://courses.codeinstitute.net/courses/
 
 from django import forms
 from .models import UserProfile

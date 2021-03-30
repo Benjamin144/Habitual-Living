@@ -163,7 +163,7 @@ and won't go through version control, the stored SECRET_KEYS in Gitpods workspac
 ### Design
 #### Colour Scheme
 * Mainly Light gray, dark gray, black, orange, red, white yellow
-* I have used the color properties ![#73767a](tests/73767a.png); #f54b48; #283342; #aab7c4; #3f4952 #f8f8f8; #7397a7; #000; #fff;  Black; White; across the site with
+* I have used the color properties #73767a; #f54b48; #283342; #aab7c4; #3f4952 #f8f8f8; #7397a7; #000; #fff;  Black; White; across the site with
 * #6c757d; #28a745; #ffc107; #17a2b8; #f8f9fa; #343a40 as convenience colours from ['boostrap4']
 * Some of the Psychological properties of colours text in the project was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours) 
 * #F7EC36; #F7EC36; #FAAC42; #ec110d; #dc3545 

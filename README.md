@@ -3,7 +3,7 @@
 The sites purpose was also to demonstrate the speed and convenience of buying online, with nice back end store builder features that makes the website a viable business tool.
 [View the live project here.] https://habitual-living.herokuapp.com 
 
-<h2 align="center"><img src="https://github.com/Benjamin144/habitual_living/blob/master/josephroberts.png"></h2> 
+![Mockup](images/habitual-living.png)
 
 ## Table of Contents
 * [User Experience Design (UX)](#User-Experience-Design)
@@ -21,9 +21,8 @@ The sites purpose was also to demonstrate the speed and convenience of buying on
             * [Colour Scheme](#Colour-Scheme)
             * [Typography](#Typography)
             * [Imagery](#Imagery)
-- [Features](#Features)
+* [Features](#Features)
     * [Existing Features](#Existing-Features)
-    * [Future Features](#Features-to be developed)
 * [Technologies](#Technologies)
 * [Testing](#Testing)
     * [Test Results](#Test-Results)
@@ -80,7 +79,7 @@ The site is the foundation of a whole bigger enterprise as far as eccomerce site
 * Backend Django Admin for easy of use updating product set
 * Defensive Design.
 
-![Points of Interest (POI)_Importance and Difficulty](TBA.jpg)
+![POI](tests/poi.JPG)
 
 ### **Structure**
 
@@ -100,13 +99,15 @@ Mandatories:
 
 Actuals:
 
-Nav bars are always avaiable and once used will direct the site user to their page of choice. They might be intrigued at first by the navlink names.
-They have immediate options to access a shopping bag regardless of whether they were subscribed. It's a handy way of luring the customer to eventually buy something
-Beside the shopping trolley icon the user can choose to log, join by registering a subscription or simply leave a comment *not developed at the time of writing this*
-There is a handy search bar above a marketing banner to help the user decide what to buy!
-If you were switching to view the Site on a mobile, then you would be able to use a nice collapsable nav bar which is made accessable via the hamburger styles icon,
-on the top left hand side of your device. Here you have different visual approach where the nav items are cascaded downwards on the LHS. 
-Again the shopping bag and links to the product pages remain intact.
+* Nav bars are always available and once used will direct the site user to their page of choice. They might be intrigued at first by the navlink names.
+*They have immediate options to access a shopping bag regardless of whether they were subscribed. 
+* Shopping bag v unsubsribed might be a handy way of luring the customer into eventually buying something.
+* Beside the shopping trolley icon the user can choose to log, join by registering a subscription or simply leave a comment *not developed at the time of writing this*
+* There is a handy search bar above a marketing banner to help the user decide what to buy!
+* If you were switching to view the Site on a mobile, then you would be able to use a nice collapsable nav bar which is made accessable via the hamburger styles icon,
+    on the top left hand side of your device. 
+   * There you have different visual approach where the nav items are cascaded downwards on the LHS. 
+* Again the shopping bag and links to the product pages remain intact.
 
 As far as navigation goes it flows like.....
 
@@ -162,7 +163,7 @@ and won't go through version control, the stored SECRET_KEYS in Gitpods workspac
 ### Design
 #### Colour Scheme
 * Mainly Light gray, dark gray, black, orange, red, white yellow
-* I have used the color properties #73767a; #f54b48; #283342; #aab7c4; #3f4952 #f8f8f8; #7397a7; #000; #fff;  Black; White; across the site with
+* I have used the color properties ![#73767a](tests/73767a.png); #f54b48; #283342; #aab7c4; #3f4952 #f8f8f8; #7397a7; #000; #fff;  Black; White; across the site with
 * #6c757d; #28a745; #ffc107; #17a2b8; #f8f9fa; #343a40 as convenience colours from ['boostrap4']
 * Some of the Psychological properties of colours text in the project was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours) 
 * #F7EC36; #F7EC36; #FAAC42; #ec110d; #dc3545 
@@ -271,16 +272,9 @@ A feature to be included in the next release will allow users the ability to lea
 ## Testing
 ### Test Strategy
 #### **Summary**
-Testing is required on all features and user stories documented in this README. 
-
-HTML Code must pass through the [W3C HTML Validator](https://validator.w3.org/#validate_by_uri).
-
-CSS Code must pass through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
-
-JavaScript code must pass through the [JSHint Validator](https://jshint.com/).
-
-Python Code must pass through [PEP8 Validator](http://pep8online.com/)
-
+Lighhouse Testing
+![Home](tests/lh_desktop.PNG)<br>  
+![Home](tests/lh_mobile.PNG)<br>
 
 ### Rudimentary Ongoing Testing in Development
 
@@ -382,7 +376,7 @@ for your own idea. - Definition from [Github Docs](https://docs.github.com/en/fr
 1. Navigate to the GitHub Repository you want to fork.
 1. On the top right of the page under the header, click the fork button.
     
-    ![Fork](readme_images/fork.JPG)
+    ![Fork](tests/fork.jpg)
 1. This will create a duplicate of the full project in your GitHub Repository.
 
 ## Git/Heroku Deployment
@@ -593,106 +587,6 @@ I'd like to give special thanks to the the following people for their help with 
 
 
 
-
-
-
-
-
-    
- 
-## Features
-
--   Responsive on all device sizes
-
--   Interactive elements
-
-Most of the Features within my Portfolio are using the Bootstrap Front-end Component Libary
-I have also used Animate.css which is a library of ready-to-use, cross-browser animations for use in your web projects. Great for emphasis, home pages, sliders, and attention-guiding hints.
-
-My intention is to add my own live projects for my partners in business.
-
-## Technologies Used
-
-### Languages Used
-
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-
-### Frameworks, Libraries & Programs Used
-
-
-
- 
-
-### Media
-
--   All Images were created by the Joseph Roberts.
-
-## Testing
-
-I have tested my portfolio using Chromes developer tools, and Browserstack
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-
-
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
-
-### Testing User Stories from User Experience (UX) Section
-
--   #### First Time Visitor Goals
-
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the person.
-
-        1. Upon entering the site, users are met with a solid deep bl ue navigation bar to go to explore a choice of three other pages. Beneath the nav bar the user is impacted by a dynamic full width background image that bears my full animated name and 
-           job title. The user can click simultaneously switch between arrow and job title once clicked on scrolls down to the lower extremities of the page.  
-        2. Once there the user will quickly understand the purpose of the website which really is pre marketing a call to action, considering me as a potential employee, candidate or collaborator.
-        3. The user is free to scroll back up or back down the page to the footer, to see the details on how to stay in touch with me or choose to delve deeper into the website if still interested. With a handy 'back to the top' feature to save excessive scrolling.
-
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
-
-        1. The site has been designed to aid the user in making simple traditional choices when navigating around the site and the use of catchy imagery has been chosen to maintain interest, throughout their journey.
-           Each nav bar item is featured to keep the user engaged as much as possible with delayed hover/time effect. The logo in the top right hand corner is non desript and it's purpose is to lead the user to the homepage when on other pages of the site.
-        2. In keeping with the home page style of presentation, I have kept the style very basic and honest with alot of white-space with symbolism. The idea behind this is to help the user push through the site as quickly as possible, only focussing in on what is necessary at the time of reading.
-           I have therefore minimized my profile to a modal button where again the user can breifly access it or stay interested.
-        3. When the user clicks on the Skills Page, they are met with more bold inviting images and quote to keep the user further engaged. Purpose being that it may help the user to focus on the content and information they were seeking. 
-           The use of the carousel is to further confirm the skillset on offer by me as a Front end web developer and how I would rate myself.
-        4. The user will be spending most of their time on this page, I have added a portfolio dropdown nav-item here so the user can see further examples of my learning of differing web development presentations.
-           On the final Contact Page the user can easily scroll down to a section where they have an option to get in touch with me 
-        
-
-    3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-        1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media links below which highlights the links to them.
-
--   #### Returning Visitor Goals
-
-    1. As a Returning Visitor, I want to find the...................
-
-        1. ...............................................................................................................................................
-        2. ...............................................................................................................................................
-
-    2. As a Returning Visitor, ...........................................................................................................................
-
-        1. ...............................................................................................................................................
-        2. ...............................................................................................................................................
-        3. ...............................................................................................................................................
-        4. ...............................................................................................................................................
-        5. ...............................................................................................................................................
-
-    3. As a Returning Visitor, ...........................................................................................................................
-
-        1. ...............................................................................................................................................
-        
--   #### Frequent User Goals
-
-    1. As a Frequent User, ...............................................................................................................................
-
-        1. ...............................................................................................................................................
-
-    2. As a Frequent User, ...............................................................................................................................
-
-        1. ...............................................................................................................................................
 
 
 

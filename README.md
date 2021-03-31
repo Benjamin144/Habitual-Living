@@ -985,7 +985,7 @@ When deploying to GitHub Pages with Heroku the following steps were taken...
 ## Credits
 
 Background image - Taken from [unsplash](https://unsplash.com/) - '/media/samantha-gades-BlIhVfXbi9s-unsplash.jpg'
-* [Tim Nelson] - An amazing inspirational teacher - https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/b9bac9a8de154d8d809b0907d30bdea8/debc2a856a0f4ccf8c4b28ebf98bf516/?activate_block_id=block-v1%3ACodeInstitute%2BDCP101%2B2017_T3%2Btype%40sequential%2Bblock%40debc2a856a0f4ccf8c4b28ebf98bf516
+* [Tim Nelson] -For the code -  An amazing inspirational teacher - https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/b9bac9a8de154d8d809b0907d30bdea8/debc2a856a0f4ccf8c4b28ebf98bf516/?activate_block_id=block-v1%3ACodeInstitute%2BDCP101%2B2017_T3%2Btype%40sequential%2Bblock%40debc2a856a0f4ccf8c4b28ebf98bf516
 
 
 ### Code

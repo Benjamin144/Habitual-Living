@@ -1,3 +1,5 @@
+# https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware #
+
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save

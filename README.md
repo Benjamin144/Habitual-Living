@@ -41,72 +41,75 @@ The sites purpose was also to demonstrate the speed and convenience of buying on
 ## User Experience Design
 ### **Strategy**
 
-My focus here is to lure buyers into purchasing a particular variety of product types for home environment.
-The site is the foundation of a whole bigger enterprise as far as eccomerce sites go, but demonstrates the ease of use well.
+My focus here is to lure buyers into purchasing a particular variety of product types for the home environment.
+The site is the foundation of a whole bigger enterprise as far as eccomerce sites go, but it's a solid platform to build out from.
 
 #### **Goals**
-* To eventually fashion buyers into buying products not always readily avaiable in general stores. 
-* Using the website would be readily convenient where customers can expect regular updates to the products
+* To eventually fashion buyers into buying products not always readily available in general stores. 
+* Using the website would be a convenient way for customers to buy innovative product designs. They can expect regular updates to the product database.
 
 #### User stories
 
-* First Time Visitor Goals - Standard 'Just looking'
+* First Time Visitor Goals - Standard, 'Just looking'
 
-*   1. Standard Access window shopper ||  I want to easily view what I am buying so to make a purchase based on a product that I might not have known before visiting the site.
-*   2. Standard Access window shopper ||  I want to easily visualize a products description to get a good understanding of what to expect from my purchase.  
-*   3. Standard Access window shopper ||  I want to be able to differentiate between exotic items, and then decide on wether it's worth buying for the price
-*   4. Standard Access window shopper ||  If I was to buy the product then there would need to be some way of seeing the generated amout of all my potential products
+*   1. Standard Access window shopper ||  I want to easily view what I am buying so that I can make a purchase based on a product that I might not have known before visiting the site.
+*   2. Standard Access window shopper ||  I want to easily visualise a products description so I can get a good understanding of what to expect from my purchase.  
+*   3. Standard Access window shopper ||  I want to be able to differentiate between exotic items, and then decide on wether it's worth buying for the price.
+*   4. Standard Access window shopper ||  If I was to buy the product then the site would have to provide some some way of generating a visual aide to help guide my spending.
         
 * A subscribed users Goals - Exclusive 'Ok I have signed up...now what'?
 
-*   1. Exclusive Access subscribers   ||  I want to have exclusive membership to take advantage of any offers available
-*   2. Exclusive Access subscribers   ||  Can I store my purchases in a shopping bag and come back to it later...I will need my own user profile, can I recover my account 
-*   3. Exclusive Access subscribers   ||  Will I be notified as to wether I have joined as a subscriber. I really like the itinery of products
+*   1. Exclusive Access subscribers   ||  Well, I want to have exclusive membership to take advantage of any offers available.
+*   2. Exclusive Access subscribers   ||  Could I store my purchases in a shopping bag and get back to it later?. Would I need my own user profile? Could I recover my account? 
+*   3. Exclusive Access subscribers   ||  Would I be notified as to wether I have joined as a subscriber because I really like the itinery of products and want to buy.
 
 * Frequent User Goals - 'Not a bad place to shop to be fair'...
 
-*   1. As a returning shopper ||  How easy is it for mr to find the items I need? - is there a system to make the process of finding the product easy, category, price..
-*   2. As a returning shopper ||  I understand the product genre, if only I can find away to search what I need across abroad range of categories
-*   3. As a returning shopper ||  if the produt wasn't available would theree be a way to leave feedback?
+*   1. As a returning shopper ||  How easy is it for me to find the items I need? - Is there a system to make the process of finding the product straightforward, by category or price for example?.
+*   2. As a returning shopper ||  I understand the product genre, if only there was a way to search what I need across a broader range of categories.
+*   3. As a returning shopper ||  If the product wasn't available would there be a way to leave feedback?
 
 ### **Scope**
 
+So the user triggers many possible scenarios. To address those concerns the following scope of ideals might help answer those concerns.
+
 **Regular Tech Gadgets uploaded:**
-* Creates, Reads, Updates Deletes.
-* Log in/out protocols
-* Stored item accessable by profiles
-* Site works well on all screen sizes.
-* Backend Django Admin for easy of use updating product set
-* Defensive Design.
+* Creates, Reads, Updates Deletes 
+* Log in/out protocols.
+* Stored items are accessable by using unique profiles.
+* Site works well on all screen sizes, users enjoy relevant UX detail.
+* Backend Django admin covers easy product updates and sets administrative priviledges on the database.
+* Defensive Design to keep the user honest.
 
 ![POI](tests/poi.JPG)
+With alot of ground to cover breaking down what's a must have verses a minimum viable product especially where the site functionality is concerned, becomes a huge undertaking.
+However the site is geared to keep the user informed every step of the way.
 
 ### **Structure**
 
 User Story:
-> Site users are under no illusion that they are joining on to an eccomerce website offering
+> Site users are under no illusion that they are joining on to an eccomerce website offering.
 
 Branding:
-* The brand of the website is in the name Habitual Living which is the site logo. Infact it is visable throughout to give off a strong engaged prescence.
-* The Logo will always navigate back to the Home Page and displays Website purpose which is 'Ideas For Your Perfect Home'
-* It has a pleasant, clean look and feel as a modern welcoming introduction with an eye catching red :orange: hover over :Red: button to entice one into the site 
+* The brand of the website is in the name Habitual Living which is the site logo. Infact the logo is visable throughout to give off a strong engaging prescence.
+* The Logo will always navigate back to the Home Page and displays the sites purpose which is 'Ideas For Your Perfect Home'.
+* It has a pleasant, clean look and feel and has a modern welcoming introduction with an eye catching red :orange: hover over :Red: button to entice the user into the site. 
 
 Viewpoint:
-> The site is easy to use ad designed for maximum efficiency with convenient buttons and nav links making for a pleasant experience
+* The site is easy to use and designed for maximum efficiency with convenient buttons and nav links making for a smooth experience.
 
 Mandatories:
 * Navigational items, such as buttons and links are consistent and menus are available at all times.
 
 Actuals:
 
-* Nav bars are always available and once used will direct the site user to their page of choice. They might be intrigued at first by the navlink names.
-*They have immediate options to access a shopping bag regardless of whether they were subscribed. 
-* Shopping bag v unsubsribed might be a handy way of luring the customer into eventually buying something.
+* Again, nav bars are always available, and once used will direct the site user to their pages of choice. They might be intrigued at first by the navlink names used to evoke a sense of class.
+* The user has an immediate option to access a shopping bag regardless of whether they were subscribed or not. 
+* Shopping bag verses an unsubsribed user might be a handy way of luring the customer into eventually buying something from the store.
 * Beside the shopping trolley icon the user can choose to log, join by registering a subscription or simply leave a comment *not developed at the time of writing this*
-* There is a handy search bar above a marketing banner to help the user decide what to buy!
-* If you were switching to view the Site on a mobile, then you would be able to use a nice collapsable nav bar which is made accessable via the hamburger styles icon,
-    on the top left hand side of your device. 
-   * There you have different visual approach where the nav items are cascaded downwards on the LHS. 
+* There is a handy search bar above a marketing banner tht is easily accessable for helping the user to decide what to buy!
+* If you were switching to view the site on a mobile, then you would be able to use a nice collapsable nav bar which is made accessable via the hamburger styles icon on the top left hand side of your device. 
+* There you have different visual approach wherein the nav items are cascaded downwards on the LHS of the screen. 
 * Again the shopping bag and links to the product pages remain intact.
 
 As far as navigation goes it flows like.....
@@ -125,48 +128,472 @@ As far as navigation goes it flows like.....
 
 Visuals
 
-* Works accoss all screen sizes with zero horizontal push/pull back
-* Media images are rendered well within the contstraints of their max width
-* Dynamic [Bootstrap4] popout cards contain images of products, quantity & description
-* Visually appealing 'mobile 1st' rsponsive design
+* Works accoss all screen sizes with zero horizontal push/pull back.
+* Media images are rendered well within the contstraints of their max width.
+* Dynamic [Bootstrap4] popout cards contain images of products, quantity & descriptions.
+* Visually appealing 'mobile first' rsponsive design.
 * Neutral color schemes for eye comfort, prolonging screen time.
 
 Operations
 
-* Add profile pages, when logging in to account (after verification, fictional based development)
+* Add profile pages, when logging in to your account (after verification, fictional based development).
 * Users can add product, update quantities, delete quantities.
-* Superusers can maintain the site admin by adding, removing ad updating products and prices via both front and back end.
-* When user signs up they can verify their credentials by recieving email in to their personal account thanks to 'STRIPE' webhooks.(fictional based development)
-* A users purchase information can also be sent to the users inbox in like manner (fictional based development)
-* Viable toast notifications avaiable as a visual communicator to users to inform them of various points of action on their journey throughout the site
-* Defensive measure measures in place to prevent user accessing superuser admin privaledges
+* Superusers can maintain the site administration by adding, removing and updating product prices via both front and back end interfaces.
+* When the user signs up they can verify their credentials by recieving email in to their personal account thanks to 'STRIPE' webhooks.(fictional based development).
+* A users purchase information can also be sent to the users inbox in like manner (fictional based development).
+* Viable toast notifications are made avaiable as a visual communicator, they will allow users to become inform along their journey throughout the site.
+* Defensive measure are in place to prevent user accessing superuser administrative priviledges.
 
 ### **Skeleton**
 #### Wireframes
+![Wireframes](wireframes/home_desk_drop1.jpg)
+![Wireframes](wireframes/home_desk_drop2.jpg)
+![Wireframes](wireframes/order_desk_mob.JPG)
+![Wireframes](wireframes/prod_desk_mob.JPG)
+![Wireframes](wireframes/prod_toast_checkout.JPG)
 
-**Final Wireframes**
-(Images TBA)
+#### Database Design **Django admin visuals**
 
-**Original Design Wireframes**
-(Images TBA)
+![images](images/admin_view.JPG)
+![images](images/categories_view.JPG)
+![images](images/categories_view.JPG)
+![images](images/orders_view.JPG)
+![images](images/products_view.JPG)
+![images](images/sites_view.JPG)
+![images](images/users_view.JPG)
 
-#### Database Design
-Django admin visuals:
+* I designed this JSON coded database design & references:
+
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "gourmet",
+      "friendly_name": "Gourmet"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "lighting_sound",
+      "friendly_name": "Lighting & Sound"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "offers",
+      "friendly_name": "Offers"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "deals",
+      "friendly_name": "Deals"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "spa",
+      "friendly_name": "Spa"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "living_space",
+      "friendly_name": "Living Space"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+      "name": "security_data",
+      "friendly_name": "Security & Data"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+      "name": "discovery",
+      "friendly_name": "Discovery"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.category",
+    "fields": {
+      "name": "outdoor",
+      "friendly_name": "Outdoor"
+    }
+  }
+]
+
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "ACQ-SPA-1-5",
+      "name": "Acquifero Wash Basin Taps",
+      "description": "Acquifero is a collection with a particularly essential design and are made in AISI 316L stainless.",
+      "price": 58.99,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "https://cdn.bigbathroomshop.co.uk/media/catalog/product/cache/07469e52453ec3e9e92a88c7a63b12d8/b/t/bt0117c_hr_a_gimp_zoomed.jpg",
+      "image": "acquifero_basin.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "LAV-OUT-2-9",
+      "name": "Lavastone Chargrill 9.5kW",
+      "description": "This premium counter top commercial lava rock chargrill is fitted with heavy duty straight burners.",
+      "price": 598.99,
+      "category": 9,
+      "rating": 5,
+      "image_url": "https://adexa.co.uk/image/cache/catalog/Adexa/6LG020-1200x1200.jpg",
+      "image": "lavastone_chargrill.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "ADE-GOU-3-1",
+      "name": "Adexa Insect Killer GC240",
+      "description": "This commercial fly killer is perfect for keeping areas free from unwanted pests such as flies.",
+      "price": 58.8,
+      "category": 1,
+      "rating": 4.8,
+      "image_url": "https://adexa.co.uk/image/cache/catalog/Adexa/GC240-1200x1200.jpg",
+      "image": "adexa_insect_killer.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "AMA-DEA-4-4",
+      "name": "Amazon Echo",
+      "description": "The 3th gen Amazon Echo premium sound and added features.",
+      "price": 58.99,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/71Q9d6N7xkL._AC_SL1000_.jpg",
+      "image": "amazon_echo.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "AMA-LIV-5-6",
+      "name": "Amazon Echo II",
+      "description": "The 4th gen Amazon Echo brings an updated look, premium sound and added features.",
+      "price": 89.99,
+      "category": 6,
+      "rating": 5,
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/71Q9d6N7xkL._AC_SL1000_.jpg",
+      "image": "amazon_echo_II.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "ARL-OUT-6-9",
+      "name": "Arlo 3 Floodlight",
+      "description": "Works with Alexa for voice control (Alexa device sold separately). Wireless Requirements-2.4GHertz Wi-Fi network.",
+      "price": 58.99,
+      "category": 9,
+      "rating": 5,
+      "image_url": "https://brain-images-ssl.cdn.dixons.com/0/0/10214100/u_10214100.jpg",
+      "image": "arlo_3_floodlight.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "AUG-SEC-7-7",
+      "name": "August Smart Lock",
+      "description": "Works with Alexa for voice control (Alexa device sold separately). Wireless Requirements-2.4GHertz Wi-Fi network (Connect Wi-Fi Bridge sold separately). Control and monitor your door from anywhere. Lock and unlock your door, control keyless access and keep track of who comes and goes, all from your phone.",
+      "price": 192.46,
+      "category": 7,
+      "rating": 4.6,
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/51Lm7sw46GL._AC_SL1000_.jpg",
+      "image": "august_smart_lock.png"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "BED-DEA-8-4",
+      "name": "Bedroom Pentagramma",
+      "description": "Modular bed head in solid canaletta walnut. The bed head can be made up of one individual lateral unit of cm.105 for a single bed, or of two lateral units with a total width of cm.210.",
+      "price": 58.99,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/img_pro2-4/114/9263/pentagramma-b.jpg",
+      "image": "pentagramma-b.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "BEL-OFF-9-3",
+      "name": "Belkin_wmo_Plug_1",
+      "description": "The Wemo Switch gives you control of your lamps and small appliances whenever you want, wherever you choose, with tonnes of options for scheduling and automation. Paired with Amazon Alexa or Google Assistant.",
+      "price": 58.99,
+      "category": 3,
+      "rating": 4.6,
+      "image_url": "https://www.digitalsave.co.uk/images/detailed/6/belkin_wmo_plug_1.png",
+      "image": "belkin_wmo_plug_1.png"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "BOL-LIG-10-2",
+      "name": "Bolster-Track",
+      "description": "Choose the fully chromed versions with mirror effect or tone things down with the matte black or white versions, which also have a chromed edge. Available as a foot, recessed, track and pendant variant.",
+      "price": 58.99,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/img_pro2-4/102/0867/bolster-foot-ar111-11050309-surface-b.jpg",
+      "image": "bolster_track.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "EUF-OUT-11-9",
+      "name": "Eufy Doorbell",
+      "description": "Wireless Video Doorbell (Battery-Powered) with 2K HD, No Monthly Fee, On-Device AI for Human Detection, 2-Way Audio, Simple Self-Installation",
+      "price": 179.99,
+      "category": 9,
+      "rating": 5,
+      "image_url": "https://cdn.shopify.com/s/files/1/0504/1094/6753/products/E8210_Battery_Video_Doorbell_2K_EF_BC_88_E9_BB_91_EF_BC_89_2048x.jpg?v=1608126414",
+      "image": "eufy_doorbell.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "EUF-SEC-12-7",
+      "name": "Eufy Video Camera",
+      "description": "t includes the Thermostat E and the Heat Link E. The Heat Link goes in the same place as your current thermostat, while the Thermostat E can be placed somewhere handy in your home.",
+      "price": 37.99,
+      "category": 7,
+      "rating": 5,
+      "image_url": "https://cdn.shopify.com/s/files/1/0504/1094/6753/products/T8400--800x800_2048x.jpg?v=1608126492",
+      "image": "eufy_indoor_cam.jpg"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "GOO-LIV-13-6",
+      "name": "Google Nest  Hub",
+      "description": "t includes the Thermostat E and the Heat Link E. The Heat Link goes in the same place as your current thermostat, while the Thermostat E can be placed somewhere handy in your home.",
+      "price": 198.99,
+      "category": 6,
+      "rating": 4.8,
+      "image_url": "https://storage.googleapis.com/mannequin/blobs/ad8f6ace-de2c-4627-b38e-e34f6e3469d0.mp4",
+      "image": "google_nest_hub.jpg"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "GOO-LIV-14-6",
+      "name": "Google Nest Thermo",
+      "description": "Supplied in this pack of two and with its classic eye catching design the Google Nest Learning Thermostat is not only beautiful to look at but learns the temperature that you like, then programs itself.",
+      "price": 58.99,
+      "category": 6,
+      "rating": 5,
+      "image_url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS67blxViRUikoDzbicmo8ZM6XT4fjin0TX_4AsYsQ2KQNc0YF2IQ&usqp=CAc",
+      "image": "google_nest_thermo.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "INF-DIS-15-8",
+      "name": "Infinty_Gold",
+      "description": "Ninja Titanium Gold Mirror \"ALLOY's innovative Titanium-plated Gold Mirror Finish has been designed to capture the striking gold colour of brass in a mirror",
+      "price": 199.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/img_pro2-4/109/9397/infinity_Amber_bru_1_01_br.jpg",
+      "image": "infinty_gold.jpg"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "BIK-OUT-16-9",
+      "name": "Bikers Loclock",
+      "description": "Bicycle rack in recycled polyethylene with UHPC inside reinforcement. Dimensions: 83 x 12 x 85 cm Weight: 20 kg Installation: Base embedding in the pavement",
+      "price": 189.99,
+      "category": 9,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/pro2-3/20157142/loclock-01-pro-b-arcit18.jpg",
+      "image": "loclock_01.jpg"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "MIL-SPA-18-5",
+      "name": "Milk-Pro-Basin",
+      "description": "0 tap hole suspended washbasin with overflow hole cm. 40x28xh.15,5 (1 tap hole left or right only on request)",
+      "price": 499.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/pro2-3/20157923/milk-f-001526-pro-b-arcit18.jpg",
+      "image": "milk_mini.jpg"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "MEC-DIS-17-8",
+      "name": "Mech Timer",
+      "description": "Salter Mechanical Timer - Stainless Steel. Stainless steel mechanical timer. 60 minute count down time. Soft touch rubber turn knob. Easy to read dial. Extra long alarm. 1 year guarantee. Stainless steel/Black",
+      "price": 12.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "https://cdn.shopify.com/s/files/1/0248/3915/9844/products/41kj_7E08vL_1024x1024.jpg?v=1612438391",
+      "image": "mech_timer.png"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "PAG-OUT-19-9",
+      "name": "Pagoden-Schirm-kurbel-Multi",
+      "description": "240 cm Powder-coated aluminum frame; fiberglass rods; covering ACRYLFABRIC Accessories: Crank with Tilt mechanism",
+      "price": 179.99,
+      "category": 9,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/img_pro2-4/146/4108/pagoden-schirm-kurbel-multi2-b.jpg",
+      "image": "pagoden_umbrella.jpg"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "PHI-LIG-20-2",
+      "name": "Phillips Hue",
+      "description": "Control your lighting from your smartphone Includes bridge / bulbs x 2 Works with Apple HomeKit / Google Assistant / Amazon Alexa Choose from 16 million colours Sync lights with movies and music",
+      "price": 98.49,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "https://brain-images-ssl.cdn.dixons.com/8/3/10186638/u_10186638.jpg",
+      "image": "phillips_hue.jpg"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "SAL-DIS-21-8",
+      "name": "Salter-Contour-Digital-Timer",
+      "description": "Take the guesswork out of cooking and baking with this handy kitchen digital timer from Salter. You can set it to count up or count down, with a 99 minutes, 59 seconds maximum time.",
+      "price": 13.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "https://www.robertdyas.co.uk/media/catalog/product/cache/ee7f57371963fdaf9f4353c1acf7bd18/u/n/untitled-1_0005_103790.jpg",
+      "image": "salter_digital_timer.png"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "STO-SPA-22-5",
+      "name": "Porro storage-dressing",
+      "description": "Offering three different types of wardrobe structures, Storage is the first sectional system that creates continuity of space in the whole wardrobe. The innovation arises from the new concept of the bearing structure: the side.",
+      "price": 250.00,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/img_pro2-1/140/1008/storage-dressing-001-y-b.jpg",
+      "image": "storage_dressing.jpg"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "SUP-SPA-23-9",
+      "name": "superlock-01-pro-b-arcit18",
+      "description": "Bicycle rack in recycled polyethylene with UHPC concrete inside reinforcement. Dimensions: 83 x 12 x 85 cm Weight: 20 kg Installation: Base embedding in the pavement.",
+      "price": 229.99,
+      "category": 9,
+      "rating": 4.6,
+      "image_url": "https://image.architonic.com/pro2-3/20157151/superlock-01-pro-b-arcit18.jpg",
+      "image": "superlock_01.jpg"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "ZIG-LIG-24-2",
+      "name": "zig-zag-piantana-neu-b",
+      "description": "Satin Nickel Metal Wall Sconces and floor lamps.",
+      "price": 299.99,
+      "category": 2,
+      "rating": 5,
+      "image_url": "https://image.architonic.com/img_pro2-4/107/6261/zig-zag-piantana-neu-b.jpg",
+      "image": "zig_zag_piantana.jpg"
+    }
+  }
+]
 
 #### Security
 
 Database connection details are set up in environ.os settings for development, [True] 
-and won't go through version control, the stored SECRET_KEYS in Gitpods workspace ENV correspond to those that are stored in the Heroku config variables. 
+and won't go through version control, the stored SECRET_KEYS in Gitpods workspace 'env' correspond to those that are stored in the Heroku config variables and Stripe.
+I also set up a email host, 2 step authentication to link my local Google account to Django using the Heroku configuration variables.
 
 
 ### **Surface**
 ### Design
 #### Colour Scheme
 * Mainly Light gray, dark gray, black, orange, red, white yellow
-* I have used the color properties #73767a; #f54b48; #283342; #aab7c4; #3f4952 #f8f8f8; #7397a7; #000; #fff;  Black; White; across the site with
-* #6c757d; #28a745; #ffc107; #17a2b8; #f8f9fa; #343a40 as convenience colours from ['boostrap4']
+* I have used the color properties 
+* [#73767a]; [#f54b48]; [#283342]; [#aab7c4]; [#3f4952]; [#f8f8f8]; [#7397a7]; [#000]; [#fff[]; [Black]; [White]; across the site with
+* [#6c757d]; [#28a745]; [#ffc107]; [#17a2b8]; [#f8f9fa]; [#343a40]; as convenience colours from ['boostrap4']
 * Some of the Psychological properties of colours text in the project was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours) 
-* #F7EC36; #F7EC36; #FAAC42; #ec110d; #dc3545 
+* [#F7EC36]; [#F7EC36]; [#FAAC42]; [#ec110d]; [#dc3545]. 
 
 #### Typography
 * Nunito is used as the only font as it is 'a well balanced sans serif typeface'. provided by [GoogleFonts] - https://fonts.google.com/specimen/Nunito?preview.text_type=custom#glyphs
@@ -174,7 +601,7 @@ and won't go through version control, the stored SECRET_KEYS in Gitpods workspac
 
 #### Imagery
 * The Landing page hosts a background image by 'Samantha Gades' '/media/samantha-gades-BlIhVfXbi9s-unsplash.jpg' taken from'['unsplash'] - I took inspiration from the clean subtle look 
-  and the ideal Home Life for some suited the overall look and feel of the website.
+  and the ideal Home life for some suited the overall look and feel of the website.
 
 ****
 ## Features
@@ -199,18 +626,18 @@ A feature to be included in the next release will allow users the ability to lea
 * [CSS](https://en.wikipedia.org/wiki/CSS)
 	* This project uses custom written CSS to style the Website.
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-    * JavaScript is used along with [stripe](https://www.stripe.com/) for the email real time notification webhooks. 
-    * [jQuery](https://jquery.com/) is used for the following: 
-        * Mobile side nav
-        * Displaying Success/Fail message verifying contact form status.
-        * Scrollup Materialize elements.
-        * To populate downdrops on select elements.
+    * JavaScript is used along with [stripe](https://www.stripe.com/) for the email real time notification webhooks.
+* [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/)
+    * 'Jinja is a modern and designer-friendly templating language for Python, modelled after Django’s templates'. 
+* [jQuery](https://jquery.com/) is used for the following: 
+    * Scrollup Materialize elements. 
 * [Python](https://www.python.org/)
     * This projects core was created using Python, the back-end logic and the means to run/view the Website.
     * Python Modules used (These can be found in the requirements.txt project file):
-* [Jinja2] https://jinja.palletsprojects.com/en/2.11.x/
-    * 'Jinja is a modern and designer-friendly templating language for Python, modelled after Django’s templates'. 
-    * 'It is fast, widely used and secure with the optional sandboxed template execution environment'.
+* [[Stripe](https://www.stripe.com/) ] 'It is fast, widely used and secure with the optional sandboxed template execution environment'.
+    * Used to trigger Django views letting you know that an events has occurred, allowing the webhook view handler
+    to handle the event in a variety of differing ways. This effectively allows us to listen to messages from Stripe. 
+
 ****
         Package             Version
         ------------------- -------
@@ -239,8 +666,8 @@ A feature to be included in the next release will allow users the ability to lea
     *    stripe              2.56.0
 
 ****
-* [balsamiq Wireframes](https://balsamiq.com/wireframes/)
-	* This was used to create wireframes for 'UX design skeletal development.
+* [Lucid Charts](https://lucid.co/)
+	* Intelligent diagramming for teams, information, and processes, used for wireframes.
 * [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 * [Django](https://www.djangoproject.com/)
@@ -263,14 +690,38 @@ A feature to be included in the next release will allow users the ability to lea
     * Heroku was used to deploy the live website
 * [Materialize](https://materializecss.com/)
     * The Materialize framework was used with JavaScript scroll up button. 
-* [Techsini](http://techsini.com/multi-mockup/index.php)
+* [Am I Responsive](http://ami.responsivedesign.is/)
     * Multi Device Website Mockup Generator was used to create the Mock up image in this README
-* [TinyJPG](https://tinyjpg.com/)
-	* TinyJPG/TinyPNG is used to reduce the file sizes of images before being deployed to reduce storage and bandwith.
 ****
 
 ## Testing
-### Test Strategy
+HTML Code must pass through the W3C HTML Validator. -https://validator.w3.org/
+![Images](images/bag.JPG)<br>  
+![Images](images/bag-total.PNG)<br>     
+![Images](images/checkout-buttons.JPG)<br>  
+![Images](images/home_page.PNG)<br> 
+
+
+CSS Code must pass through the W3C CSS Validator. - https://jigsaw.w3.org/
+![Images](images/base.JPG)<br>
+![Images](images/checkout.JPG)<br>  
+
+JavaScript code must pass through the JSHint Validator. https://jshint.com/
+![Images](images/countries.JPG)<br> 
+![Images](images/stripe.JPG)<br>
+
+Python Code must pass through PEP8 Validator - http://pep8online.com/
+![Images](images/checkout_admin.JPG)<br>  
+![Images](images/checkout_apps.JPG)<br>  
+![Images](images/checkout_forms.JPG)<br>  
+![Images](images/checkout_models.JPG)<br>  
+![Images](images/checkout_signals.JPG)<br>   
+![Images](images/home_urls.JPG)<br>  
+![Images](images/home_apps.JPG)<br>  
+![Images](images/home_urls.JPG)<br>  
+![Images](images/home_views.JPG)<br>  
+![Images](images/hab_asgi.PNG)<br>  
+
 #### **Summary**
 Lighhouse Testing
 ![Home](tests/lh_desktop.PNG)<br>  
@@ -278,23 +729,20 @@ Lighhouse Testing
 
 ### Rudimentary Ongoing Testing in Development
 
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iphone6 iPhone7, iPhone 8 iPhoneX, iPad, iPad Pro and Pixel 2XL
--   A large amount of testing was done to ensure that all pages were linking correctly.
-
-Issues-and-Resolutions-to-issues-found-during-testing
+* The Website was tested on Google Chrome, Internet Explorer, Opera and Firefox.
+* The website was viewed on a variety of devices such as Desktop, Laptop, iphone6 iPhone7, iPhone 8 iPhoneX, iPad, iPad Pro and Pixel 2XL
+* A large amount of testing was done to ensure that all pages were linking correctly on both desktop and mobile devices.
+* Any bugs related to any reverse path not hosted by external servers would have to be addressed in ongoing developement of this project.
 
 ### Known Bugs
 
--  Running Heroku login from my developer environment will only work with <heroku login -i> command
--  Then run command <heroku config:set DISABLE_COLLECTSTATIC=1 --app habitual-living>
--  Unresolved bug with toast after signing in new user did not notify successful sign in or sign out.
+*  Running Heroku login from my developer environment will only work with <heroku login -i> command.
+*  Then run command <heroku config:set DISABLE_COLLECTSTATIC=1 --app habitual-living>, (The latest build is now automatically configured from Heroku)
+*  Unresolved bug with toast after signing in new user did not notify successful sign in or sign out.
 
 ## Unresolved Issues
 
-- When leaving the shopping bag area and navigating to the home page to register or use the items from the dropdown menu. I noticed that the links were not clickable until I refreshed or click on the brand logo.
--  verifing email from local host is broken
--  edit | delete in added view is broken 
+* When leaving the shopping bag area and navigating to the home page to register or use the items from the dropdown menu. I noticed that the links were not clickable until I refreshed or click on the brand logo.
 
 ## Resolved Issues
 
@@ -313,9 +761,6 @@ in a production instance on the live website.
 #### **Heroku Dependencies**
 Testing is dependent on the website being deployed live on Heroku.
 
-### Test Results
-
-Full test results can be found [here](TESTING.md)TBA
 
 ****
 
@@ -395,7 +840,7 @@ When deploying to GitHub Pages with Heroku the following steps were taken...
 3. Addons included dj-database-url and psycopg2-binary were migrated and my json fixtures were also loaded into the project.
 4. I was then allowed to create my superuser account to access the Django Admin pages.
 5. By installing Gunicorn you can use it as the webserver and runs a Procfile to tell Heroku to create a web dyno to run Gunicorne to run this site.
-6. The results after deploying to Heroku were
+6. The results after deploying to Heroku were:
 
 ## Output Heroku Deployment Dump
 
@@ -560,7 +1005,9 @@ I'd like to give special thanks to the the following people for their help with 
 * My Mentor Dick Vlaanderen for continuous helpful feedback.
 * Tutor support at Code Institute for their support.
 * The Code Institute Slack community for their ongoing support.
-* I received inspiration for this project throughout the Code Institutes course material.
+* I received inspiration for this project throughout the Code Institutes course material, the content was particularly, and helped me in my process of becoming a competent developer.
+
+Thank you so much for looking at this project!
 
 ****
 

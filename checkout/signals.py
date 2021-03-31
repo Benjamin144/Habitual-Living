@@ -1,3 +1,5 @@
+# https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware #
+
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 
